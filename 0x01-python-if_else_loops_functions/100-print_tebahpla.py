@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-alpha = 0
-for c in range(ord('z'), ord('a') - 1, -1):
-    print("{}".format(chr(c - alpha)), end="")
-    alpha = 32 if alpha == 0 else 0
+for i in reversed(range(97, 123)):
+    if (i % 2 == 0):
+        print('{:c}'.format(i), end='')
+    else:
+        print('{:c}'.format(i - 32), end='')
